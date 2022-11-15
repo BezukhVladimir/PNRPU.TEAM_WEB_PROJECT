@@ -6,7 +6,7 @@ import sys
 import os
 
 from cinema import Cinema
-sys.path.append("D:\\Miscellaneous\\PNRPU_TEAM_WEB_PROJECT")
+sys.path.append("..\\..\\..\\PNRPU_TEAM_WEB_PROJECT")
 print(sys.path)
 from lib.file_checks import does_file_not_exist_or_is_empty
 
