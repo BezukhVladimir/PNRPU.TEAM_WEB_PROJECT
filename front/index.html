@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+
+<?php
+	require_once 'database.php';
+	$result = mysqli_query($induction,  "SELECT * FROM 'Movies'");
+
+	if ($induction)
+		{
+?>
+
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel='stylesheet' href='style.css'>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet">
+	<title>Web Project</title>
+</head>
+<body>
+	
+<div class="header">
+	<div class="container">
+		<div class="header-line">
+			<div class="header-logo">
+				<img src="PNRPU_logo.png" width="100" height="100"alt="">
+			</div>
+
+			<div class="navigation">
+				<a class="nav-item" href="@">КИНОТЕАТРЫ</a>
+				<a class="nav-item" href="@">ФИЛЬМЫ</a>
+				<a class="nav-item" href="@">О НАС</a>
+			</div>
+
+			<div class="cart">
+				<a href="@">
+					<img src="ticket.png" width="50" height="50" alt="">
+				</a>
+			</div>
+			<div class="button">
+				<a href="@">Купить билет</a>
+			</div>
+		</div>
+
+	</div>
+	
+</div>
+
+<div class="films">
+
+
+
+
+	<div class="mainSections_block mainPageBlock">
+		<div class="mainPageBlock_header">
+			<a class="mainPageBlock_headerLink" href="https://perm.kinoafisha.info/movies/">
+				<span class="mainPageBlock_title">Фильмы в прокате</span>
+				<svg class="mainPageBlock_arrow symbol symbol-rightArrow"><use xlink:href="#rightArrow"></use></svg>
+			</a>
+			<nav class="mainPageBlock_nav mainPageBlock_nav-stretch bricks bricks-normal bricks-normal-reverse">
+				<a class="bricks_item" href="https://www.kinoafisha.info/online/">Онлайн</a>
+				<a class="bricks_item" href="https://www.kinoafisha.info/rating/">Рейтинги</a>
+			</nav>
+		</div>
+		<div class="mainPageBlock_content movieList movieList-grid movieList-swipe grid swipe outer-mobile inner-mobile">
+					<div class="movieList_item movieItem movieItem-grid grid_cell3">
+        <a href="https://www.kinoafisha.info/movies/8326846/">
+             <picture class="movieItem_poster picture picture-poster" style="--color-picture: #5f4a47" data-modules="picture"><source srcset="https://static.kinoafisha.info/k/movie_posters/220/upload/movie_posters/6/4/8/8326846/565790025366.jpg.webp" type="image/webp"><source srcset="https://static.kinoafisha.info/k/movie_posters/220/upload/movie_posters/6/4/8/8326846/565790025366.jpg" type="image/jpeg"><img class="picture_image" alt="Сердце пармы" title="Сердце пармы" src="./Киноафиша – все о кино и кинотеатрах, афиша кинотеатров России_files/565790025366.jpg"></picture>         </a>
+		<div class="movieItem_info">
+            <a class="movieItem_title" href="https://www.kinoafisha.info/movies/8326846/">Сердце пармы</a>
+			<span class="movieItem_subtitle">Эпическая драма о запретной любви и чувстве долга. Экранизация одноименного романа Алексея Иванова</span>
+			<div class="movieItem_details">
+				<span class="movieItem_genres">исторический, драма</span>
+				<span class="movieItem_year">2022, Россия</span>
+			</div>
+			<div class="movieItem_actions">
+					<div class="movieItem_mark mark ">
+						<span class="mark_val" style="width:80%;"></span>
+						<span class="mark_num">8.0</span>
+					</div>
+		
+				<button class="movieItem_favBtn favBtn  favBtn-active" data-fav-btn="" data-modules="Fav" data-param="{&quot;type&quot;:&quot;movies&quot;, &quot;uid&quot;:&quot;8326846&quot;}">
+					<svg class="favBtn_icon symbol symbol-health" role="img"><use xlink:href="#health"></use></svg>
+				</button>
+			</div>
+		</div>
+        	</div>
+					<div class="movieList_item movieItem movieItem-grid grid_cell3">
+        <a href="https://www.kinoafisha.info/movies/8367033/">
+             <picture class="movieItem_poster picture picture-poster" style="--color-picture: #a86658" data-modules="picture"><source srcset="https://static.kinoafisha.info/k/movie_posters/220/upload/movie_posters/3/3/0/8367033/990006172855.jpg.webp" type="image/webp"><source srcset="https://static.kinoafisha.info/k/movie_posters/220/upload/movie_posters/3/3/0/8367033/990006172855.jpg" type="image/jpeg"><img class="picture_image" alt="Ёлки 9" title="Ёлки 9" src="./Киноафиша – все о кино и кинотеатрах, афиша кинотеатров России_files/990006172855.jpg"></picture>         </a>
+		<div class="movieItem_info">
+            <a class="movieItem_title" href="https://www.kinoafisha.info/movies/8367033/">Ёлки 9</a>
+			<span class="movieItem_subtitle">Популярная франшиза возвращается на большие экраны с новыми звёздами. </span>
+			<div class="movieItem_details">
+				<span class="movieItem_genres">комедия</span>
+				<span class="movieItem_year">2022, Россия</span>
+			</div>
+			<div class="movieItem_actions">
+					<div class="movieItem_mark mark ">
+						<span class="mark_val" style="width:50%;"></span>
+						<span class="mark_num">5.0</span>
+					</div>
+		
+				<button class="movieItem_favBtn favBtn  favBtn-active" data-fav-btn="" data-modules="Fav" data-param="{&quot;type&quot;:&quot;movies&quot;, &quot;uid&quot;:&quot;8367033&quot;}">
+					<svg class="favBtn_icon symbol symbol-health" role="img"><use xlink:href="#health"></use></svg>
+				</button>
+			</div>
+		</div>
+        	</div>
+					<div class="movieList_item movieItem movieItem-grid grid_cell3">
+        <a href="https://www.kinoafisha.info/movies/8367117/">
+             <picture class="movieItem_poster picture picture-poster" style="--color-picture: #3c2d2e" data-modules="picture"><source srcset="https://static.kinoafisha.info/k/movie_posters/220/upload/movie_posters/7/1/1/8367117/782527197469.jpg.webp" type="image/webp"><source srcset="https://static.kinoafisha.info/k/movie_posters/220/upload/movie_posters/7/1/1/8367117/782527197469.jpg" type="image/jpeg"><img class="picture_image" alt="На ощупь" title="На ощупь" src="./Киноафиша – все о кино и кинотеатрах, афиша кинотеатров России_files/782527197469.jpg"></picture>         </a>
+		<div class="movieItem_info">
+            <a class="movieItem_title" href="https://www.kinoafisha.info/movies/8367117/">На ощупь</a>
+			<span class="movieItem_subtitle">Триллер с Дмитрием Нагиевым о выживании в диком лесу </span>
+			<div class="movieItem_details">
+				<span class="movieItem_genres">драма, триллер</span>
+				<span class="movieItem_year">2022, Россия</span>
+			</div>
+			<div class="movieItem_actions">
+					<div class="movieItem_mark mark ">
+						<span class="mark_val" style="width:80%;"></span>
+						<span class="mark_num">8.0</span>
+					</div>
+		
+				<button class="movieItem_favBtn favBtn  favBtn-active" data-fav-btn="" data-modules="Fav" data-param="{&quot;type&quot;:&quot;movies&quot;, &quot;uid&quot;:&quot;8367117&quot;}">
+					<svg class="favBtn_icon symbol symbol-health" role="img"><use xlink:href="#health"></use></svg>
+				</button>
+			</div>
+		</div>
+        	</div>
+					<div class="movieList_item movieItem movieItem-grid grid_cell3">
+        <a href="https://www.kinoafisha.info/movies/8367837/">
+             <picture class="movieItem_poster picture picture-poster" style="--color-picture: #9ea4a0" data-modules="picture"><source srcset="https://static.kinoafisha.info/k/movie_posters/220/upload/movie_posters/7/3/8/8367837/420650268871.jpg.webp" type="image/webp"><source srcset="https://static.kinoafisha.info/k/movie_posters/220/upload/movie_posters/7/3/8/8367837/420650268871.jpg" type="image/jpeg"><img class="picture_image" alt="Петр I: Последний царь и первый император" title="Петр I: Последний царь и первый император" src="./Киноафиша – все о кино и кинотеатрах, афиша кинотеатров России_files/420650268871.jpg"></picture>         </a>
+		<div class="movieItem_info">
+            <a class="movieItem_title" href="https://www.kinoafisha.info/movies/8367837/">Петр I: Последний царь и первый император</a>
+			<span class="movieItem_subtitle">Документальный блокбастер о правлении Петра Великого </span>
+			<div class="movieItem_details">
+				<span class="movieItem_genres">исторический, документальный</span>
+				<span class="movieItem_year">2022, Россия</span>
+			</div>
+			<div class="movieItem_actions">
+					<div class="movieItem_mark mark ">
+						<span class="mark_val" style="width:70%;"></span>
+						<span class="mark_num">7.0</span>
+					</div>
+		
+				<button class="movieItem_favBtn favBtn  favBtn-active" data-fav-btn="" data-modules="Fav" data-param="{&quot;type&quot;:&quot;movies&quot;, &quot;uid&quot;:&quot;8367837&quot;}">
+					<svg class="favBtn_icon symbol symbol-health" role="img"><use xlink:href="#health"></use></svg>
+				</button>
+			</div>
+		</div>
+        	</div>
+					<div class="movieList_item movieItem movieItem-grid grid_cell3">
+        <a href="https://www.kinoafisha.info/movies/8367945/">
+             <picture class="movieItem_poster picture picture-poster" style="--color-picture: #363034" data-modules="picture"><source srcset="https://static.kinoafisha.info/k/movie_posters/220/upload/movie_posters/5/4/9/8367945/842393601937.jpg.webp" type="image/webp"><source srcset="https://static.kinoafisha.info/k/movie_posters/220/upload/movie_posters/5/4/9/8367945/842393601937.jpg" type="image/jpeg"><img class="picture_image" alt="Заклятье: 13-й этаж" title="Заклятье: 13-й этаж" src="./Киноафиша – все о кино и кинотеатрах, афиша кинотеатров России_files/842393601937.jpg"></picture>         </a>
+		<div class="movieItem_info">
+            <a class="movieItem_title" href="https://www.kinoafisha.info/movies/8367945/">Заклятье: 13-й этаж</a>
+			<span class="movieItem_subtitle">Хоррор о семье, поселившейся в доме на проклятом кладбище</span>
+			<div class="movieItem_details">
+				<span class="movieItem_genres">драма, ужасы, детектив</span>
+				<span class="movieItem_year">2022, Индонезия</span>
+			</div>
+			<div class="movieItem_actions">
+					<div class="movieItem_mark mark ">
+						<span class="mark_val" style="width:70%;"></span>
+						<span class="mark_num">7.0</span>
+					</div>
+		
+				<button class="movieItem_favBtn favBtn  favBtn-active" data-fav-btn="" data-modules="Fav" data-param="{&quot;type&quot;:&quot;movies&quot;, &quot;uid&quot;:&quot;8367945&quot;}">
+					<svg class="favBtn_icon symbol symbol-health" role="img"><use xlink:href="#health"></use></svg>
+				</button>
+			</div>
+		</div>
+        	</div>
+					<div class="movieList_item movieItem movieItem-grid grid_cell3">
+        <a href="https://www.kinoafisha.info/movies/8365708/">
+             <picture class="movieItem_poster picture picture-poster" style="--color-picture: #667989" data-modules="picture"><source srcset="https://static.kinoafisha.info/k/movie_posters/220/upload/movie_posters/8/0/7/8365708/167208714709.jpg.webp" type="image/webp"><source srcset="https://static.kinoafisha.info/k/movie_posters/220/upload/movie_posters/8/0/7/8365708/167208714709.jpg" type="image/jpeg"><img class="picture_image" alt="Двойная петля" title="Двойная петля" src="./Киноафиша – все о кино и кинотеатрах, афиша кинотеатров России_files/167208714709.jpg"></picture>         </a>
+		<div class="movieItem_info">
+            <a class="movieItem_title" href="https://www.kinoafisha.info/movies/8365708/">Двойная петля</a>
+			<span class="movieItem_subtitle">Героический боевик о преданности и дружбе </span>
+			<div class="movieItem_details">
+				<span class="movieItem_genres">боевик, драма, военный</span>
+				<span class="movieItem_year">2022, США</span>
+			</div>
+			<div class="movieItem_actions">
+					<div class="movieItem_mark mark ">
+						<span class="mark_val" style="width:50%;"></span>
+						<span class="mark_num">5.0</span>
+					</div>
+		
+				<button class="movieItem_favBtn favBtn  favBtn-active" data-fav-btn="" data-modules="Fav" data-param="{&quot;type&quot;:&quot;movies&quot;, &quot;uid&quot;:&quot;8365708&quot;}">
+					<svg class="favBtn_icon symbol symbol-health" role="img"><use xlink:href="#health"></use></svg>
+				</button>
+			</div>
+		</div>
+        	</div>
+					<div class="movieList_item movieItem movieItem-grid grid_cell3">
+        <a href="https://www.kinoafisha.info/movies/8362136/">
+             <picture class="movieItem_poster picture picture-poster" style="--color-picture: #919ea0" data-modules="picture"><source srcset="https://static.kinoafisha.info/k/movie_posters/220/upload/movie_posters/6/3/1/8362136/997307918190.jpg.webp" type="image/webp"><source srcset="https://static.kinoafisha.info/k/movie_posters/220/upload/movie_posters/6/3/1/8362136/997307918190.jpg" type="image/jpeg"><img class="picture_image" alt="Треугольник печали" title="Треугольник печали" src="./Киноафиша – все о кино и кинотеатрах, афиша кинотеатров России_files/997307918190.jpg"></picture>         </a>
+		<div class="movieItem_info">
+            <a class="movieItem_title" href="https://www.kinoafisha.info/movies/8362136/">Треугольник печали</a>
+			<span class="movieItem_subtitle">Комедийная драма с Вуди Харрельсоном о переосмыслении своего места в жизни</span>
+			<div class="movieItem_details">
+				<span class="movieItem_genres">драма</span>
+				<span class="movieItem_year">2022, Швеция / США / Франция</span>
+			</div>
+			<div class="movieItem_actions">
+					<div class="movieItem_mark mark ">
+						<span class="mark_val" style="width:60%;"></span>
+						<span class="mark_num">6.0</span>
+					</div>
+		
+				<button class="movieItem_favBtn favBtn  favBtn-active" data-fav-btn="" data-modules="Fav" data-param="{&quot;type&quot;:&quot;movies&quot;, &quot;uid&quot;:&quot;8362136&quot;}">
+					<svg class="favBtn_icon symbol symbol-health" role="img"><use xlink:href="#health"></use></svg>
+				</button>
+			</div>
+		</div>
+        	</div>
+					<div class="movieList_item movieItem movieItem-grid grid_cell3">
+        <a href="https://www.kinoafisha.info/movies/8367838/">
+             <picture class="movieItem_poster picture picture-poster" style="--color-picture: #686672" data-modules="picture"><source srcset="https://static.kinoafisha.info/k/movie_posters/220/upload/movie_posters/8/3/8/8367838/679489203087.jpg.webp" type="image/webp"><source srcset="https://static.kinoafisha.info/k/movie_posters/220/upload/movie_posters/8/3/8/8367838/679489203087.jpg" type="image/jpeg"><img class="picture_image" alt="Корабль в Пусан" title="Корабль в Пусан" src="./Киноафиша – все о кино и кинотеатрах, афиша кинотеатров России_files/679489203087.jpg"></picture>         </a>
+		<div class="movieItem_info">
+            <a class="movieItem_title" href="https://www.kinoafisha.info/movies/8367838/">Корабль в Пусан</a>
+			<span class="movieItem_subtitle">Опасные заключенные и элитный спецназ объединяются перед лицом наивысшего зла</span>
+			<div class="movieItem_details">
+				<span class="movieItem_genres">боевик, криминал, фантастика</span>
+				<span class="movieItem_year">2022, Корея</span>
+			</div>
+			<div class="movieItem_actions">
+					<div class="movieItem_mark mark ">
+						<span class="mark_val" style="width:60%;"></span>
+						<span class="mark_num">6.0</span>
+					</div>
+		
+				<button class="movieItem_favBtn favBtn  favBtn-active" data-fav-btn="" data-modules="Fav" data-param="{&quot;type&quot;:&quot;movies&quot;, &quot;uid&quot;:&quot;8367838&quot;}">
+					<svg class="favBtn_icon symbol symbol-health" role="img"><use xlink:href="#health"></use></svg>
+				</button>
+			</div>
+		</div>
+        	</div>
+					<div class="movieList_item movieItem movieItem-grid grid_cell3">
+        <a href="https://www.kinoafisha.info/movies/8367714/">
+             <picture class="movieItem_poster picture picture-poster" style="--color-picture: #abbcb8" data-modules="picture"><template></template><img class="picture_image" alt="Иван Семёнов: Школьный переполох" title="Иван Семёнов: Школьный переполох" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-picture="https://static.kinoafisha.info/k/movie_posters/220/upload/movie_posters/4/1/7/8367714/983526148170.jpg"></picture>         </a>
+		<div class="movieItem_info">
+            <a class="movieItem_title" href="https://www.kinoafisha.info/movies/8367714/">Иван Семёнов: Школьный переполох</a>
+			<span class="movieItem_subtitle">Семейная комедия о приключениях школьника-фантазера </span>
+			<div class="movieItem_details">
+				<span class="movieItem_genres">комедия, семейный</span>
+				<span class="movieItem_year">2022, Россия</span>
+			</div>
+			<div class="movieItem_actions">
+					<div class="movieItem_mark mark ">
+						<span class="mark_val" style="width:80%;"></span>
+						<span class="mark_num">8.0</span>
+					</div>
+		
+				<button class="movieItem_favBtn favBtn  favBtn-active" data-fav-btn="" data-modules="Fav" data-param="{&quot;type&quot;:&quot;movies&quot;, &quot;uid&quot;:&quot;8367714&quot;}">
+					<svg class="favBtn_icon symbol symbol-health" role="img"><use xlink:href="#health"></use></svg>
+				</button>
+			</div>
+		</div>
+        	</div>
+					<div class="movieList_item movieItem movieItem-grid grid_cell3">
+        <a href="https://www.kinoafisha.info/movies/8365336/">
+             <picture class="movieItem_poster picture picture-poster" style="--color-picture: #fefdfd" data-modules="picture"><template></template><img class="picture_image" alt="Любовники" title="Любовники" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-picture="https://static.kinoafisha.info/k/movie_posters/220/upload/movie_posters/6/3/3/8365336/688493674999.jpg"></picture>         </a>
+		<div class="movieItem_info">
+            <a class="movieItem_title" href="https://www.kinoafisha.info/movies/8365336/">Любовники</a>
+			<span class="movieItem_subtitle">Романтичная комедия с Романом Курцыным и Павлом Прилучным </span>
+			<div class="movieItem_details">
+				<span class="movieItem_genres">комедия, мелодрама</span>
+				<span class="movieItem_year">2022, Россия</span>
+			</div>
+			<div class="movieItem_actions">
+					<div class="movieItem_mark mark ">
+						<span class="mark_val" style="width:70%;"></span>
+						<span class="mark_num">7.0</span>
+					</div>
+		
+				<button class="movieItem_favBtn favBtn  favBtn-active" data-fav-btn="" data-modules="Fav" data-param="{&quot;type&quot;:&quot;movies&quot;, &quot;uid&quot;:&quot;8365336&quot;}">
+					<svg class="favBtn_icon symbol symbol-health" role="img"><use xlink:href="#health"></use></svg>
+				</button>
+			</div>
+		</div>
+        	</div>
+					<div class="movieList_item movieItem movieItem-grid grid_cell3">
+        <a href="https://www.kinoafisha.info/movies/8367820/">
+             <picture class="movieItem_poster picture picture-poster" style="--color-picture: #cfb9c0" data-modules="picture"><template></template><img class="picture_image" alt="LOL. Surprise! Фильм" title="LOL. Surprise! Фильм" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-picture="https://static.kinoafisha.info/k/movie_posters/220/upload/movie_posters/0/2/8/8367820/969016497830.jpg"></picture>         </a>
+		<div class="movieItem_info">
+            <a class="movieItem_title" href="https://www.kinoafisha.info/movies/8367820/">LOL. Surprise! Фильм</a>
+			<span class="movieItem_subtitle">Красочный мультфильм о приключениях школьницы в мире кукол LOL</span>
+			<div class="movieItem_details">
+				<span class="movieItem_genres">боевик, анимация, семейный</span>
+				<span class="movieItem_year">2021, США</span>
+			</div>
+			<div class="movieItem_actions">
+					<div class="movieItem_mark mark ">
+						<span class="mark_val" style="width:30%;"></span>
+						<span class="mark_num">3.0</span>
+					</div>
+		
+				<button class="movieItem_favBtn favBtn  favBtn-active" data-fav-btn="" data-modules="Fav" data-param="{&quot;type&quot;:&quot;movies&quot;, &quot;uid&quot;:&quot;8367820&quot;}">
+					<svg class="favBtn_icon symbol symbol-health" role="img"><use xlink:href="#health"></use></svg>
+				</button>
+			</div>
+		</div>
+        	</div>
+					<div class="movieList_item movieItem movieItem-grid grid_cell3">
+        <a href="https://www.kinoafisha.info/movies/8354867/">
+             <picture class="movieItem_poster picture picture-poster" style="--color-picture: #dfaf08" data-modules="picture"><template></template><img class="picture_image" alt="Ламборгини: Человек-легенда" title="Ламборгини: Человек-легенда" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-picture="https://static.kinoafisha.info/k/movie_posters/220/upload/movie_posters/7/6/8/8354867/868897100472.jpg"></picture>         </a>
+		<div class="movieItem_info">
+            <a class="movieItem_title" href="https://www.kinoafisha.info/movies/8354867/">Ламборгини: Человек-легенда</a>
+			<span class="movieItem_subtitle">История жизни создателя знаменитого автомобиля Lamborghini</span>
+			<div class="movieItem_details">
+				<span class="movieItem_genres">драма, биография</span>
+				<span class="movieItem_year">2022, Италия</span>
+			</div>
+			<div class="movieItem_actions">
+					<div class="movieItem_mark mark ">
+						<span class="mark_val" style="width:50%;"></span>
+						<span class="mark_num">5.0</span>
+					</div>
+		
+				<button class="movieItem_favBtn favBtn  favBtn-active" data-fav-btn="" data-modules="Fav" data-param="{&quot;type&quot;:&quot;movies&quot;, &quot;uid&quot;:&quot;8354867&quot;}">
+					<svg class="favBtn_icon symbol symbol-health" role="img"><use xlink:href="#health"></use></svg>
+				</button>
+			</div>
+		</div>
+        	</div>
+		</div>
+		<div class="mainPageBlock_footer">
+			<a class="mainPageBlock_footerBtn button-primary button-large" href="https://www.kinoafisha.info/movies/">Все фильмы в прокате</a>
+		</div>
+	</div>
+
+
+	<!-- releases -->
+	<div class="mainSections_block mainPageBlock">
+		<div class="mainPageBlock_header">
+			<a class="mainPageBlock_headerLink" href="https://www.kinoafisha.info/releases/">
+				<span class="mainPageBlock_title">Премьеры</span>
+				<svg class="mainPageBlock_arrow symbol symbol-rightArrow"><use xlink:href="#rightArrow"></use> </svg>
+			</a>
+			<nav class="mainPageBlock_nav mainPageBlock_nav-stretch bricks bricks-normal bricks-normal-reverse">
+				<a class="bricks_item" href="https://www.kinoafisha.info/releases/">Календарь премьер</a>
+				<a class="bricks_item" href="https://www.kinoafisha.info/releases/online/">Онлайн-премьеры</a>
+			</nav>
+		</div>
+		<div class="mainPageBlock_content premiereList swipe outer-mobile inner-mobile">
+			<div class="premiereList_item">
+				<span class="premiereList_date">8 декабря</span>
+				<div class="premiereList_posterBox">
+					 <picture class="premiereList_poster picture picture-poster" style="--color-picture: #d8d8d8" data-modules="picture"><template></template><img class="picture_image" alt="Приключения Тедди" title="Приключения Тедди" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-picture="https://static.kinoafisha.info/k/movie_posters/canvas/220/upload/movie_posters/3/5/9/8367953/574215651955.jpg"></picture> 					<button class="premiereList_btn premiereList_btn-cinema">В кино</button>
+				</div>
+				<div class="premiereList_info">
+					<span class="premiereList_title">Приключения Тедди</span>
+					<span class="premiereList_desc">семейный</span>
+				</div>
+				<a class="premiereList_href" href="https://www.kinoafisha.info/movies/8367953/"></a>
+			</div>
+			<div class="premiereList_item">
+				<span class="premiereList_date">&nbsp;</span>
+				<div class="premiereList_posterBox">
+					 <picture class="premiereList_poster picture picture-poster" style="--color-picture: #d8d8d8" data-modules="picture"><template></template><img class="picture_image" alt="Щелкунчик и волшебная флейта" title="Щелкунчик и волшебная флейта" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-picture="https://static.kinoafisha.info/k/movie_posters/canvas/220/upload/movie_posters/9/2/4/8364429/596953912508.jpg"></picture> 					<button class="premiereList_btn premiereList_btn-cinema">В кино</button>
+				</div>
+				<div class="premiereList_info">
+					<span class="premiereList_title">Щелкунчик и волшебная флейта</span>
+					<span class="premiereList_desc">детский</span>
+				</div>
+				<a class="premiereList_href" href="https://www.kinoafisha.info/movies/8364429/"></a>
+			</div>
+			<div class="premiereList_item">
+				<span class="premiereList_date">&nbsp;</span>
+				<div class="premiereList_posterBox">
+					 <picture class="premiereList_poster picture picture-poster" style="--color-picture: #d8d8d8" data-modules="picture"><template></template><img class="picture_image" alt="Помнить" title="Помнить" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-picture="https://static.kinoafisha.info/k/movie_posters/canvas/220/upload/movie_posters/7/3/9/8367937/416339022373.jpg"></picture> 					<button class="premiereList_btn premiereList_btn-cinema">В кино</button>
+				</div>
+				<div class="premiereList_info">
+					<span class="premiereList_title">Помнить</span>
+					<span class="premiereList_desc">боевик, драма</span>
+				</div>
+				<a class="premiereList_href" href="https://www.kinoafisha.info/movies/8367937/"></a>
+			</div>
+			<div class="premiereList_item">
+				<span class="premiereList_date">15 декабря</span>
+				<div class="premiereList_posterBox">
+					 <picture class="premiereList_poster picture picture-poster" style="--color-picture: #d8d8d8" data-modules="picture"><template></template><img class="picture_image" alt="Непослушник 2" title="Непослушник 2" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-picture="https://static.kinoafisha.info/k/movie_posters/canvas/220/upload/movie_posters/6/9/6/8366696/335957130007.jpg"></picture> 					<button class="premiereList_btn premiereList_btn-cinema">В кино</button>
+				</div>
+				<div class="premiereList_info">
+					<span class="premiereList_title">Непослушник 2</span>
+					<span class="premiereList_desc">комедия</span>
+				</div>
+				<a class="premiereList_href" href="https://www.kinoafisha.info/movies/8366696/"></a>
+			</div>
+			<div class="premiereList_item">
+				<span class="premiereList_date">&nbsp;</span>
+				<div class="premiereList_posterBox">
+					 <picture class="premiereList_poster picture picture-poster" style="--color-picture: #d8d8d8" data-modules="picture"><template></template><img class="picture_image" alt="Маша и Медведь в кино: 12 месяцев" title="Маша и Медведь в кино: 12 месяцев" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-picture="https://static.kinoafisha.info/k/movie_posters/canvas/220/upload/movie_posters/2/4/8/8367842/556163182911.jpg"></picture> 					<button class="premiereList_btn premiereList_btn-cinema">В кино</button>
+				</div>
+				<div class="premiereList_info">
+					<span class="premiereList_title">Маша и Медведь в кино: 12 месяцев</span>
+					<span class="premiereList_desc">анимация, семейный</span>
+				</div>
+				<a class="premiereList_href" href="https://www.kinoafisha.info/movies/8367842/"></a>
+			</div>
+		</div>
+	</div>
+	
+
+	<!-- news -->
+	<div class="mainSections_block mainPageBlock">
+		<div class="mainPageBlock_header">
+			<a class="mainPageBlock_headerLink" href="https://www.kinoafisha.info/news/">
+				<span class="mainPageBlock_title">Новости</span>
+				<svg class="mainPageBlock_arrow symbol symbol-rightArrow"><use xlink:href="#rightArrow"></use></svg>
+			</a>
+		</div>
+		<div class="mainPageBlock_content newsShortList newsShortList-onThumb newsShortList-withDate grid swipe inner-mobile outer-mobile ">
+					<a class="newsShortList_item grid_cell4" href="https://www.kinoafisha.info/news/kventin-tarantino-otkazalsya-brat-dzhonni-deppa-na-rol-ringo-v-kriminalnom-chtive/">
+			 <picture class="newsShortList_thumb picture" style="--color-picture: #d8d8d8" data-modules="picture"><template></template><img class="picture_image" alt="Квентин Тарантино отказался брать Джонни Деппа на роль Ринго в «Криминальном чтиве»" title="Квентин Тарантино отказался брать Джонни Деппа на роль Ринго в «Криминальном чтиве»" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-picture="https://static.kinoafisha.info/k/news/x260/upload/news/632579409519.jpg"></picture> 			<div class="newsShortList_info">
+				<span class="newsShortList_title">Квентин Тарантино отказался брать Джонни Деппа на роль Ринго в «Криминальном чтиве»</span>
+			</div>
+		</a>
+					<a class="newsShortList_item grid_cell4" href="https://www.kinoafisha.info/news/sikvel-ohotnikov-za-privideniyami-nasledniki-snimet-scenarist-gil-kinan/">
+			 <picture class="newsShortList_thumb picture" style="--color-picture: #d8d8d8" data-modules="picture"><template></template><img class="picture_image" alt="Сиквел «Охотников за привидениями: Наследники» снимет сценарист Гил Кинан" title="Сиквел «Охотников за привидениями: Наследники» снимет сценарист Гил Кинан" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-picture="https://static.kinoafisha.info/k/news/x260/upload/news/952546170864.jpg"></picture> 			<div class="newsShortList_info">
+				<span class="newsShortList_title">Сиквел «Охотников за привидениями: Наследники» снимет сценарист Гил Кинан</span>
+			</div>
+		</a>
+					<a class="newsShortList_item grid_cell4" href="https://www.kinoafisha.info/news/stalo-izvestno-kogda-startuet-devyatyy-i-zaklyuchitelnyy-sezon-seriala-flesh/">
+			 <picture class="newsShortList_thumb picture" style="--color-picture: #d8d8d8" data-modules="picture"><template></template><img class="picture_image" alt="Стало известно, когда стартует девятый и заключительный сезон сериала «Флэш» " title="Стало известно, когда стартует девятый и заключительный сезон сериала «Флэш» " src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-picture="https://static.kinoafisha.info/k/news/x260/upload/news/329459330246.jpg"></picture> 			<div class="newsShortList_info">
+				<span class="newsShortList_title">Стало известно, когда стартует девятый и заключительный сезон сериала «Флэш» </span>
+			</div>
+		</a>
+		</div>
+	</div>
+	
+	<div class="container">
+		
+		<div class="films-items">
+			
+			<div class="films-item">
+				<div class="films-image">
+					<img src="movie1.png" class="films-img">
+				</div>
+
+				<div class="films-text">Ёлки 9</div>
+
+				<div class="films-subtext">комедия, 2022, Россия</div>
+			</div>
+
+		</div>
+
+	</div>
+
+</div>
+
+</body>
+</html>
+
+<?php
+	}
+
+	else
+	{
+		?>
+		<html lang="en">
+		<html>
+			<head>
+				<meta charset="utf-8">
+				<title>Ошибка подключения</title>
+			</head>
+			<body>
+				<center>
+					<h1>Connection to DataBase Error!<h1>
+				</center>
+			</body>
+		</html>
+		25
+		<?php
+	}
+	mysqli_close($induction);
+?>
