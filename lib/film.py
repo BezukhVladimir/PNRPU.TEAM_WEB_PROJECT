@@ -1,7 +1,7 @@
 class Film:
 
-    def __init__(self, cinema, name, tags, details):
-        self.cinema = cinema
+    def __init__(self, name, year, country, tags):
         self.name = name
+        self.year = year
+        self.country = country
         self.tags = tags
-        self.details = details
