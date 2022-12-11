@@ -19,6 +19,8 @@ def update_films_sessions(cinema_name, films_sessions):
                             film_sessions.film.country,
                             film_sessions.film.tags])
 
+            temp = []
             for session in film_sessions.sessions:
-                writer.writerow([session.start_time,
-                                 session.ticket_price])
+                temp.append(session.start_time)
+                temp.append(session.ticket_price)
+            writer.writerow(temp)
