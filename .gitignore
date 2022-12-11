@@ -1,0 +1,5 @@
+/venv/
+/.idea/
+/web_scraper/data_extractor/cities/perm/cinemas.html
+/web_scraper/data_extractor/info.html
+/web_scraper/data_extractor/cities/perm/cinemas_schedules/
