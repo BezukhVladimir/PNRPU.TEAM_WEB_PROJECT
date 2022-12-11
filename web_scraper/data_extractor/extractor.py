@@ -37,9 +37,11 @@ def get_cinemas(city):
     cinemas = []
 
     for i in range(0, len(all_cinemas_hrefs)):
+        address = all_cinemas_addresses[i].text
+        address = re.sub(' ', ' ', address)
         cinemas.append(Cinema(all_cinemas_hrefs[i].get("href"),
                               all_cinemas_names[i].text,
-                              all_cinemas_addresses[i].text))
+                              address))
 
     return cinemas
 
