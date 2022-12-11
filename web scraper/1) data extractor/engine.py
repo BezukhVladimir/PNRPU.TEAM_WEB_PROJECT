@@ -46,8 +46,9 @@ for cinema in cinemas:
     print()
 
 films = []
-shows = []
-timess = []
+cinema_shows = []
+
+
 count = 0
 
 for cinema in cinemas:
@@ -78,8 +79,8 @@ for cinema in cinemas:
 		det = item_details.split()
 		
 		#print(item_details)
-		print(det)
-	item_times = []
+		#print(det)
+	fin_times = []
 	for item in all_films_times:
 		item_times = item.text
 		for obj in item_times:
@@ -91,19 +92,41 @@ for cinema in cinemas:
 			if item=="от" or item=="₽":
 				arr.remove(item)
 		item_times = arr
-		print(item_times)
+		fin_times.append(item_times)
+		#print(item_times)
+	temp_films_list = []
 	for i in range(0, len(all_films_names)):
-		films.append(Film(cinema.name,
+		temp_films_list.append(Film(cinema.name,
     		all_films_names[i].text,
             all_films_tags[i].text,
             all_films_details[i].text))
+	films.append(temp_films_list)
+	temp_shows_list = []
+	for i in range(0, len(fin_times)):
+		temp_list = []
+		for j in range(0, len(fin_times[i])):
+			if j%2 == 0:
+				if len(fin_times[i])>1:
+					temp_list.append(Shows(fin_times[i][j],fin_times[i][j+1]))
+				else:
+					temp_list.append(Shows(fin_times[i][j], 0))
+		temp_shows_list.append(temp_list)
+	cinema_shows.append(temp_shows_list)
+
 	count += 1
 
-for film in films:
-    print(film.cinema)
-    print(film.name)
-    print(film.tags)
-    print(film.details)
-for show in shows:
-    print(show.time)
-    print(show.price)
+print(len(films[0]))
+print(len(cinema_shows[0][0]))
+print(cinema_shows[0][0][0].time)
+
+films_shows_dicts = []
+
+for i in range(len(films)):
+	films_shows_dict = {}
+	for j in range(len(films[i])):
+		films_shows_dict[films[i][j].name]=cinema_shows[i][j]
+	films_shows_dicts.append(films_shows_dict)
+
+for item in films_shows_dicts[0]['Логово']:
+	print(item.time)
+	print(item.price)
