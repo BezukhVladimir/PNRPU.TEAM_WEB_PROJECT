@@ -10,6 +10,7 @@ from lib.film_sessions import FilmSessions
 from lib.file_checks import does_file_not_exist_or_is_empty
 from lib.soup import get_soup
 
+cities = {"perm" : "Пермь"}
 
 def extract_cinemas(city):
     url = "https://" + city + ".kinoafisha.info/cinema/"
@@ -37,7 +38,8 @@ def get_cinemas(city):
     cinemas = []
 
     for i in range(0, len(all_cinemas_hrefs)):
-        address = all_cinemas_addresses[i].text
+        address = f"г. {cities[city]}, "
+        address += all_cinemas_addresses[i].text
         address = re.sub(' ', ' ', address)
         cinemas.append(Cinema(all_cinemas_hrefs[i].get("href"),
                               all_cinemas_names[i].text,
