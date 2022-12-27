@@ -32,12 +32,10 @@
 			</div>
 
 			<div class="cart">
-				<a href="@">
 					<img src="ticket.png" width="50" height="50" alt="">
-				</a>
 			</div>
 			<div class="button">
-				<a href="BUY_TICKET_page.php">Купить билет</a>
+				<a  href="REGISTRATION_page.php">Купить билет</a>
 			</div>
 		</div>
 

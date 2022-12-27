@@ -9,7 +9,7 @@ body {
 
 .header {
 	background-image: url(background.jpg);
-	height: 30vh;
+	height: 22vh;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -19,7 +19,7 @@ body {
 }
 
 .header-line {
-	padding-top: 50px;
+	padding-top: 30px;
 	display: flex;
 	align-items: center;
 }

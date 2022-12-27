@@ -39,7 +39,7 @@
 				</a>
 			</div>
 			<div class="button">
-				<a href="BUY_TICKET_page.php">Купить билет</a>
+				<a href="REGISTRATION_page.php">Купить билет</a>
 			</div>
 		</div>
 
