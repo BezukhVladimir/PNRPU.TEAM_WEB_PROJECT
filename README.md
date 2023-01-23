@@ -1,4 +1,4 @@
-# (PNRPU) TEAM WEB-PROJECT
+# TEAM WEB-PROJECT (PNRPU)
 
 ## Technology stack
 Backend: PHP, MySQL<br>
