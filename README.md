@@ -1,8 +1,8 @@
 # (PNRPU) TEAM WEB-PROJECT
 
 ## Technology stack
-Backend: PHP, MySQL
-Frontend: HTML, CSS, JS
+Backend: PHP, MySQL<br>
+Frontend: HTML, CSS, JS<br>
 Web scraper: Python (beautifulsoup4)
 
 ## License
